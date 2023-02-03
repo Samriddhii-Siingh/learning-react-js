@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Starter React</title>
+    </head>
+    <body>
+        <div id="root"></div>
+        <!-- error removed by adding id (direct child of doc body) -->
+
+        <!-- need to place these script links before index.js -->
+        <!-- browser loads in order they appear in HTML file -->
+        <!-- react scripts need to appear first to load react code in index tabgs file -->
+
+        <!-- CDN links -->
+        <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+
+        <!-- at the end of body tag -->
+        <!-- JS has ability to insert elements into HTML -->
+        <!-- this functionality temporarily stops browser from reading the rest of HTML doc -->
+        <!-- if at top, it might delay prsenting content to user because of slow script -->
+        <!-- at the end of body, browser has finished redaing content of body -->
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
+
+<!-- TERMINAL -->
+
+<!-- npm init -y -->
+<!-- for package.json file -->
+<!-- -y for all questions in default questionnaire -->
+
+<!-- npm i parcel@2.7.0 --save -->
+<!-- npm i react@18.2.0 react-dom@18.2.0 --save -->
+<!-- no need to CDN links after installing react and react-dom -->
