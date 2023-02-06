@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
+
+
+<!-- package.json (in scripts)-->
+<!-- dev - bundling and serving the project -->
+<!-- build - will create a production version of application that can be used to serve and deploy this app for public -->
+
+<!-- for serving - live server, not parcel here -->
+<!-- start - to call live server, serve things built in dist(ribution) directory -->
+<!-- npm run build in start - prerequisite, to get built version everytime we start live server -->
+<!-- npm run build - partial build -->
+
+<!-- Serving "dist" (in O/P) - 127.0.0.1:8000 - alias for local host and port 8000 -->
+
+
+<!-- BUNDLERS and TRANSPILERS -->
+
+<!-- BUNDLERS -->
+<!-- A bundler's input is a project that consists of multiple JavaScript files.
+The bundler will then package all of those files and build one overall JavaScript file.
+This includes all custom javascript code in the project and all imported code from node modules like react and react-dom -->
+<!-- We're using PARCEL - minimal config & very fast engine -->
+<!-- eg, webpack, browserify -->
+<!-- Bundlers are necessary because a browser doesn't support the import and export system -->
+
+<!-- we use scripts to include JS code, but if there are many scripts, it's confusing. Why?
+one script might need from other script and similarly, so we need to organise these scripts in the correct order as browser loads them accordingly. This can become a mess, therefore BUNDLER -->
+
+<!-- Bundler allows you to write the cleaner, import syntax in your code so that you can avoid this mess and bundle all the resulting code in one overall script for the browser. -->
+
+<!-- BUNDLER - separate .js files into one file to avoid situation of multiple scripts in html -->
+
+<!-- TRANSPILERS -->
+<!-- we're using BABEL -->
+<!-- Babel does the crucial job of taking newer javascript and react syntax
+and transforming it into a syntax that the browser is actually compatible with. -->
+
+<!-- if a browser have JS env, why can't it support all synatx of JS? -->
+<!-- JS is its own independent lang -->
+<!-- development and improvement of JS made with own pace and development, which is separate from developmentof browsers -->
+<!-- Therefore the development of the javascript environments must happen in response to the language itself.
+Naturally the browsers are always playing this game of catch up as there will come a day with a javascript language has a new feature that the browser hasn't been updated to support yet. The browser will always remain a little behind as it has only been programmed to currently support the previous subset of the javascript language features. -->
+<!-- A lot of the newer features that are added to js here can be transformed into more verbose versions of JSX that all browsers are already compatible with.
+This allows us to use a technology like a babel to translate our clean modern JSX code into the older equivalent JSX syntax that the browsers can handle.Similarly, for react code. -->
+
+<!-- JSX - <div>React element with JSX</div> -->
+<!-- conversion to React.createElement('div',null,'Reactelement!'); -->
+
+
+<!-- DOM and VIRTAUL DOM -->
