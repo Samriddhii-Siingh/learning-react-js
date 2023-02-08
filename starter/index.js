@@ -19,8 +19,6 @@ root.render(element);
 // low level access of doc body 
 // this can cause conflicts between code and libraries, starts to manage react application
 
-
-
 // package.json
 
 // test - print statement in command line

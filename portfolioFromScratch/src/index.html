@@ -60,3 +60,19 @@ This allows us to use a technology like a babel to translate our clean modern JS
 
 
 <!-- DOM and VIRTAUL DOM -->
+<!-- Document Object Model - API that allows to manipulate html docs (web pgs accessible to JS), html like structure and represents as a tree, each node - individual object - have unique identity -->
+<!-- DOM allows to insert, update or remove these objects, making web pg dynamic-->
+
+<!-- in console -->
+<!-- const element = document.createElement('div');
+element.innerText = 'document object node';
+document.getElementById('root').appendChild(element);
+document.getElementById('root').removeChild(element); -->
+
+<!-- we don't call these methods directly in React -->
+<!-- VIRTUAL DOM -->
+<!-- regular DOM browser provides, virtual copy of this DOM internally in React engine - virtual DOM
+every DOM object React creates then corresponding virtual DOM -->
+<!-- VDOM - light-weight (fast, not use heavy weight doc objects from native doc API), DOM - slow (deep and complicated) -->
+<!-- while VDOM updates actual DOM, actual DOM left unchanged, after updation, react takes snapshot of VDOM and compares updated VDOM with actual DOM -->
+<!-- compares, find differences and calculates minimal no of actual DOM methods to call to update web page (most effecient and optimal way), updated to match VDOM -->

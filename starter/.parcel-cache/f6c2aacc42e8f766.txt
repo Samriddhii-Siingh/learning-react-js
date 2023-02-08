@@ -1,10 +1,6 @@
-4344
+4345
 69G:\Udemy\react-bootcamp\starter\node_modules\abortcontroller-polyfill133198898273821895 1
 87G:\Udemy\react-bootcamp\starter\node_modules\@parcel\transformer-babel\lib\constants.js133198898306368629 0
-83G:\Udemy\react-bootcamp\starter\node_modules\dom-serializer\lib\esm\foreignNames.js133198898237487775 0
-65G:\Udemy\react-bootcamp\starter\node_modules\@parcel\packager-raw133198898306114281 1
-75G:\Udemy\react-bootcamp\starter\node_modules\csso\lib\replace\Percentage.js133198898264605289 0
-44G:\Udemy\react-bootcamp\starter\package.json133198908328283454 0
 76G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\regions\TW.js133198898309810952 0
 61G:\Udemy\react-bootcamp\starter\node_modules\type-fest\source133198898265113912 1
 71G:\Udemy\react-bootcamp\starter\node_modules\css-tree\lib\syntax\pseudo133198898278450089 1
@@ -18,15 +14,24 @@
 55G:\Udemy\react-bootcamp\starter\node_modules\source-map133198898255190906 1
 67G:\Udemy\react-bootcamp\starter\node_modules\react-dom\package.json133198899559994709 0
 65G:\Udemy\react-bootcamp\starter\node_modules\weak-lru-cache\tests133198898244928133 1
+83G:\Udemy\react-bootcamp\starter\node_modules\dom-serializer\lib\esm\foreignNames.js133198898237487775 0
+65G:\Udemy\react-bootcamp\starter\node_modules\@parcel\packager-raw133198898306114281 1
+75G:\Udemy\react-bootcamp\starter\node_modules\csso\lib\replace\Percentage.js133198898264605289 0
+44G:\Udemy\react-bootcamp\starter\package.json133198908328283454 0
 49G:\Udemy\react-bootcamp\starter\package-lock.json133198905199258030 0
 97G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\features\keyboardevent-location.js133198898297257967 0
 74G:\Udemy\react-bootcamp\starter\node_modules\regenerator-runtime\README.md133198898242544777 0
 54G:\Udemy\react-bootcamp\starter\node_modules\@mischnic133198898224253156 1
 83G:\Udemy\react-bootcamp\starter\node_modules\@parcel\utils\src\isDirectoryInside.js133198898371058284 0
 83G:\Udemy\react-bootcamp\starter\node_modules\msgpackr\dist\index-no-eval.min.js.map133198898269891127 0
-36G:\Udemy\react-bootcamp\starter\dist133198917249019894 1
+36G:\Udemy\react-bootcamp\starter\dist133203455119854538 1
 76G:\Udemy\react-bootcamp\starter\node_modules\lmdb\dependencies\lz4\lib\lz4.c133198898265453012 0
 94G:\Udemy\react-bootcamp\starter\node_modules\@parcel\source-map\parcel_sourcemap_node\index.js133198898276145602 0
+70G:\Udemy\react-bootcamp\starter\node_modules\svgo\plugins\prefixIds.js133198898265133864 0
+67G:\Udemy\react-bootcamp\starter\node_modules\loose-envify\custom.js133198899557115046 0
+62G:\Udemy\react-bootcamp\starter\node_modules\@msgpackr-extract133198905198518524 1
+78G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\features\ime.js133198898295243342 0
+42G:\Udemy\react-bootcamp\starter\.gitignore133201646797799525 0
 42G:\Udemy\react-bootcamp\starter\index.html133198904558442200 0
 61G:\Udemy\react-bootcamp\starter\node_modules\msgpackr\LICENSE133198898252956422 0
 76G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\regions\UG.js133198898309907700 0
@@ -46,7 +51,7 @@
 96G:\Udemy\react-bootcamp\starter\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_dump.1133198898263069382 0
 93G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\features\css3-cursors-newer.js133198898287713788 0
 64G:\Udemy\react-bootcamp\starter\node_modules\terser\node_modules133198898224362868 1
-40G:\Udemy\react-bootcamp\starter\index.js133198917236633866 0
+40G:\Udemy\react-bootcamp\starter\index.js133203455105745448 0
 61G:\Udemy\react-bootcamp\starter\node_modules\@parcel\core\lib133198898378879251 1
 64G:\Udemy\react-bootcamp\starter\node_modules\json5\lib\util.d.ts133198898257434445 0
 74G:\Udemy\react-bootcamp\starter\node_modules\@parcel\utils\src\throttle.js133198898373240413 0
@@ -91,9 +96,6 @@
 82G:\Udemy\react-bootcamp\starter\node_modules\@parcel\transformer-svg\src\inline.js133198898289648310 0
 119G:\Udemy\react-bootcamp\starter\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\@scope\pkg\foo\bar.js133198898249547801 0
 61G:\Udemy\react-bootcamp\starter\node_modules\tslib\tslib.d.ts133198898249695298 0
-70G:\Udemy\react-bootcamp\starter\node_modules\svgo\plugins\prefixIds.js133198898265133864 0
-67G:\Udemy\react-bootcamp\starter\node_modules\loose-envify\custom.js133198899557115046 0
-62G:\Udemy\react-bootcamp\starter\node_modules\@msgpackr-extract133198905198518524 1
 62G:\Udemy\react-bootcamp\starter\node_modules\nth-check\lib\esm133198898259179778 1
 90G:\Udemy\react-bootcamp\starter\node_modules\@parcel\core\test\fixtures\library-scopehoist133198898380841642 1
 49G:\Udemy\react-bootcamp\starter\node_modules\@swc133198898224276232 1
@@ -257,15 +259,15 @@
 57G:\Udemy\react-bootcamp\starter\node_modules\terser\tools133198898272923024 1
 54G:\Udemy\react-bootcamp\starter\node_modules\js-tokens133198898242007493 1
 73G:\Udemy\react-bootcamp\starter\node_modules\@types\parse-json\index.d.ts133198898238754831 0
-83G:\Udemy\react-bootcamp\starter\node_modules\svgo\plugins\convertEllipseToCircle.js133198898256257595 0
-74G:\Udemy\react-bootcamp\starter\node_modules\json-parse-even-better-errors133198898241967767 1
-74G:\Udemy\react-bootcamp\starter\node_modules\@parcel\fs\lib\browser.js.map133198898351160567 0
-105G:\Udemy\react-bootcamp\starter\node_modules\posthtml\node_modules\posthtml-parser\dist\chunk.2UQLUWPH.js133198898351874431 0
-95G:\Udemy\react-bootcamp\starter\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\chacha8.h133198898304867627 0
-72G:\Udemy\react-bootcamp\starter\node_modules\lightningcss-win32-x64-msvc133198898239190099 1
 71G:\Udemy\react-bootcamp\starter\node_modules\utility-types\package.json133198898248700318 0
 88G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\features\tabindex-attr.js133198898308567817 0
 69G:\Udemy\react-bootcamp\starter\node_modules\nth-check\lib\parse.d.ts133198898259369269 0
+95G:\Udemy\react-bootcamp\starter\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\chacha8.h133198898304867627 0
+105G:\Udemy\react-bootcamp\starter\node_modules\posthtml\node_modules\posthtml-parser\dist\chunk.2UQLUWPH.js133198898351874431 0
+72G:\Udemy\react-bootcamp\starter\node_modules\lightningcss-win32-x64-msvc133198898239190099 1
+83G:\Udemy\react-bootcamp\starter\node_modules\svgo\plugins\convertEllipseToCircle.js133198898256257595 0
+74G:\Udemy\react-bootcamp\starter\node_modules\json-parse-even-better-errors133198898241967767 1
+74G:\Udemy\react-bootcamp\starter\node_modules\@parcel\fs\lib\browser.js.map133198898351160567 0
 97G:\Udemy\react-bootcamp\starter\node_modules\react-refresh\cjs\react-refresh-babel.development.js133198898243561554 0
 82G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\features\ch-unit.js133198898277111832 0
 84G:\Udemy\react-bootcamp\starter\node_modules\json-parse-even-better-errors\README.md133198898242265009 0
@@ -674,10 +676,6 @@
 76G:\Udemy\react-bootcamp\starter\node_modules\yaml\browser\types\timestamp.js133198898265662441 0
 84G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\features\maxlength.js133198898299213395 0
 71G:\Udemy\react-bootcamp\starter\node_modules\yaml\browser\dist\index.js133198898246364044 0
-76G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\regions\PR.js133198898305263215 0
-62G:\Udemy\react-bootcamp\starter\node_modules\semver\bin\semver133198898252424676 0
-60G:\Udemy\react-bootcamp\starter\node_modules\htmlparser2\lib133198898255660896 1
-67G:\Udemy\react-bootcamp\starter\node_modules\scheduler\package.json133198899558075354 0
 80G:\Udemy\react-bootcamp\starter\node_modules\yaml\browser\dist\legacy-exports.js133198898251480353 0
 63G:\Udemy\react-bootcamp\starter\node_modules\@parcel\runtime-js133198898309579244 1
 75G:\Udemy\react-bootcamp\starter\node_modules\yaml\browser\dist\package.json133198898269862074 0
@@ -1036,7 +1034,7 @@
 84G:\Udemy\react-bootcamp\starter\node_modules\csso\lib\restructure\6-restructBlock.js133198898245626014 0
 105G:\Udemy\react-bootcamp\starter\node_modules\htmlnano\docs\versioned_sidebars\version-2.0.0-sidebars.json133198898269453516 0
 74G:\Udemy\react-bootcamp\starter\node_modules\terser\node_modules\commander133198898244723308 1
-47G:\Udemy\react-bootcamp\starter\dist\index.html133198917248528057 0
+47G:\Udemy\react-bootcamp\starter\dist\index.html133203455119834613 0
 61G:\Udemy\react-bootcamp\starter\node_modules\terser\lib\utils133198898264347810 1
 82G:\Udemy\react-bootcamp\starter\node_modules\terser\node_modules\commander\LICENSE133198898234027025 0
 79G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\features\calc.js133198898276255383 0
@@ -1348,6 +1346,10 @@
 61G:\Udemy\react-bootcamp\starter\node_modules\semver\range.bnf133198898252926508 0
 81G:\Udemy\react-bootcamp\starter\node_modules\css-tree\lib\syntax\atrule\import.js133198898271197644 0
 61G:\Udemy\react-bootcamp\starter\node_modules\semver\semver.js133198898253791229 0
+76G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\regions\PR.js133198898305263215 0
+62G:\Udemy\react-bootcamp\starter\node_modules\semver\bin\semver133198898252424676 0
+60G:\Udemy\react-bootcamp\starter\node_modules\htmlparser2\lib133198898255660896 1
+67G:\Udemy\react-bootcamp\starter\node_modules\scheduler\package.json133198899558075354 0
 76G:\Udemy\react-bootcamp\starter\node_modules\msgpackr\dist\index-no-eval.cjs133198898255689106 0
 58G:\Udemy\react-bootcamp\starter\node_modules\scheduler\cjs133198899557667852 1
 76G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\regions\DK.js133198898290670604 0
@@ -3150,7 +3152,6 @@
 80G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\features\forms.js133198898293059463 0
 85G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\features\fullscreen.js133198898293099758 0
 82G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\features\gamepad.js133198898293191736 0
-104G:\Udemy\react-bootcamp\starter\node_modules\@msgpackr-extract\msgpackr-extract-win32-x64\node.napi.node133198898252158548 0
 91G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\features\getcomputedstyle.js133198898293398291 0
 90G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\features\getrandomvalues.js133198898293439158 0
 86G:\Udemy\react-bootcamp\starter\node_modules\@swc\helpers\lib\_wrap_async_generator.js133198898281420308 0
@@ -3167,7 +3168,6 @@
 88G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\features\iframe-srcdoc.js133198898295165733 0
 106G:\Udemy\react-bootcamp\starter\node_modules\@parcel\transformer-react-refresh-wrap\src\helpers\helpers.js133198898283205552 0
 87G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\features\imagecapture.js133198898295233390 0
-78G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\features\ime.js133198898295243342 0
 69G:\Udemy\react-bootcamp\starter\node_modules\ansi-styles\package.json133198898238784300 0
 86G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\features\import-maps.js133198898295323237 0
 97G:\Udemy\react-bootcamp\starter\node_modules\caniuse-lite\data\features\indeterminate-checkbox.js133198898295456022 0
@@ -4185,6 +4185,7 @@
 72G:\Udemy\react-bootcamp\starter\node_modules\@parcel\bundler-default\src133198898334994247 1
 90G:\Udemy\react-bootcamp\starter\node_modules\@parcel\bundler-default\lib\DefaultBundler.js133198898334988510 0
 98G:\Udemy\react-bootcamp\starter\node_modules\@msgpackr-extract\msgpackr-extract-win32-x64\index.js133198898243910876 0
+104G:\Udemy\react-bootcamp\starter\node_modules\@msgpackr-extract\msgpackr-extract-win32-x64\node.napi.node133198898252158548 0
 102G:\Udemy\react-bootcamp\starter\node_modules\@msgpackr-extract\msgpackr-extract-win32-x64\package.json133198898245221612 0
 69G:\Udemy\react-bootcamp\starter\node_modules\@mischnic\json-sourcemap133198898290396310 1
 99G:\Udemy\react-bootcamp\starter\node_modules\@msgpackr-extract\msgpackr-extract-win32-x64\README.md133198898246404870 0
@@ -4341,5 +4342,5 @@
 58G:\Udemy\react-bootcamp\starter\node_modules\.bin\svgo.ps1133198898760205208 0
 60G:\Udemy\react-bootcamp\starter\node_modules\.bin\terser.cmd133198898760153645 0
 60G:\Udemy\react-bootcamp\starter\node_modules\.bin\terser.ps1133198898760153645 0
-54G:\Udemy\react-bootcamp\starter\dist\index.3d214d75.js133198917248537984 0
-58G:\Udemy\react-bootcamp\starter\dist\index.3d214d75.js.map133198917248930124 0
+54G:\Udemy\react-bootcamp\starter\dist\index.3d214d75.js133203455119266144 0
+58G:\Udemy\react-bootcamp\starter\dist\index.3d214d75.js.map133203455119435676 0
