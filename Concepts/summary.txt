@@ -1,0 +1,45 @@
+    lifecycle Methods
+
+    fetch()
+allows to make HTTP requests to external APIs, load data from ext. service
+
+    Stateless Functional Components
+alt. way - create React components without extending Componenet (JS) classes, cleaner approach
+
+when component doesn't need to use internal state 
+
+write a fn that directly returns JSX to create component
+
+        React Router
+tech. that allows to turn single pg app. to multiple pgs of content
+
+        Higher-Order Components
+fns. that take components as I/P and O/P a transformed new component as a result
+
+    User-based browser events
+
+    Local Storage
+
+
+        HTTP - Hypertext Transfer Protocol
+a set of rules, defines how msgs should be formatted to send over web (in consistent & understandable way)
+
+system of rules, define how request and reponses work over web
+
+msgs over HTTP - hyperlinks - URLs -> Hypertext
+
+transfer - msgs of hypertext doc communicated over www
+
+HTTPS - security
+
+request response model
+
+HTTP methods - GET & POST
+    Get request - server to receive docs for app
+
+    Post request - alllows requester to send info & data to a server with that info
+
+with that info, server make changes in its backend
+
+        API - Application Programming Interface
+allow request to access info about a particular domain

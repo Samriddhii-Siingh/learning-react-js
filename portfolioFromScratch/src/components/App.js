@@ -1,7 +1,9 @@
 import React, {Component} from "react";
 import Projects from "./Projects";
 import SocialProfiles from "./SocialProfiles";
-import profile from './assets/profile.png';
+import Title from "./Title";
+import Jokes from "./Jokes";
+import profile from '../assets/profile.png';
 
 // class RegularClass {}
 // class ComponentClass extends Component {}
@@ -98,7 +100,13 @@ class App extends Component {
                 {/* image dimension 400 X 400  */}
                 {/* using CSS for className, same as in HTML for class */}
                 <h1>Hello!</h1>
-                <p>My name is Samriddhi. I'm a web developer.</p>
+                <p>My name is Samriddhi.</p>
+
+                <Title />
+
+                {/* now title wil display when displayBio prop is true */}
+                {/* { this.state.displayBio ? <Title /> :  null} */}
+
                 <p>I'm always looking forward to working on meaningful projects.</p>
                 {/* {bio} */}
                 {
@@ -120,6 +128,8 @@ class App extends Component {
                 <Projects/> 
                 <hr />
                 <SocialProfiles />
+                <hr />
+                <Jokes />
             </div>
         )
     }

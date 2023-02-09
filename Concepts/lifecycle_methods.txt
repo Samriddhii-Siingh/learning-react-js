@@ -1,0 +1,14 @@
+    Lifecycle Methods
+Fire throughtout different phases (eg, first appearance, leaving app ) of a component's life
+
+Based on a component's relationship with the doc
+
+ReactDOM.render(<element />, document.getElemnetByID('root));
+- takes React elements and components, stick them into doc in background as a state for component updates
+- either insert mew JSX based elements and components or remove from doc
+
+    componentDidMount()
+Fires when component is inserted into the DOM
+
+    componentWillUnmount()
+Fires when component is going to leave the DOM

@@ -2905,7 +2905,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-var _app = require("./App");
+var _app = require("./components/App");
 var _appDefault = parcelHelpers.interopDefault(_app);
 var _indexCss = require("./index.css");
 //CSS can be directly imported here
@@ -2955,7 +2955,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./App":"2kQhy","./index.css":"irmnC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./index.css":"irmnC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/App":"ey9du"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("./cjs/react-jsx-dev-runtime.development.js");
 
@@ -27108,418 +27108,7 @@ module.exports = require("./cjs/scheduler.development.js");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"2kQhy":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$f00f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$f00f.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _projects = require("./Projects");
-var _projectsDefault = parcelHelpers.interopDefault(_projects);
-var _socialProfiles = require("./SocialProfiles");
-var _socialProfilesDefault = parcelHelpers.interopDefault(_socialProfiles);
-var _profilePng = require("./assets/profile.png");
-var _profilePngDefault = parcelHelpers.interopDefault(_profilePng);
-// class RegularClass {}
-// class ComponentClass extends Component {}
-// const regularClassInstance = new RegularClass();
-// const componentClassInstance = new ComponentClass();
-// console.log('regularClass Instance', regularClassInstance);
-// console.log('componentClassInstance', componentClassInstance);
-class App extends (0, _react.Component) {
-    state = {
-        displayBio: false
-    };
-    // constructor() {
-    //     super();
-    //     this.state = {displayBio: false}; //won't work alone, call super()
-    //     console.log('Component this', this);
-    //     //defining method in constructor
-    //     // this.readMore = () => {
-    //     //     console.log('readMore this', this);
-    //     // }
-    //     //bind method
-    //     //this.readMore = this.readMore.bind(this);
-    //     this.toggleDisplayBio = this.toggleDisplayBio.bind(this);
-    //now, we don't need to use bind once there's callback fn.
-    //     this.toggleDisplayBio = () => {...};
-    // }
-    readMore() {
-        // this.state.displayBio = true;
-        //bad practice to directly modify component's state
-        //instead use setState()
-        this.setState({
-            displayBio: true
-        });
-        console.log("readMore this", this);
-    }
-    //Rule: To never directly modify the state
-    //call setState() to change values in state to change
-    //changes that occur in render method
-    // this.setState.displayBio = !this.setState.displayBio;
-    //WRONG (bad practice)
-    //directly modifying the state
-    // this.setState({displayBio: !this.state.displayBio});
-    //RIGHT
-    //Wrong
-    // this.state.text = this.state.text + '...'; 
-    //Correct
-    // this.setState({text: this.state.text + '...'});
-    //React re-calls render() at the end of setState()
-    //render now has something new to return based on updated values
-    //this.state.foo = 'foo'
-    //doesn't work when state is modified directly, won't re-trigger render
-    //render doesn't notice, application won't update
-    showLess() {
-        this.setState({
-            displayBio: false
-        });
-    }
-    //adding arrows to make it callback function
-    toggleDisplayBio = ()=>{
-        this.setState({
-            displayBio: !this.state.displayBio
-        });
-    // this.state.displayBio = !this.state.displayBio;
-    //doesn't work
-    };
-    //can have render also as callback fn.
-    //but it's fundamental to have render like this
-    render() {
-        // let bio = this.state.displayBio ? (
-        //     <div>
-        //             <p>I live in Lucknow, and code almost every day.</p>
-        //             <p>My favourite language is JavaScript, and I think React.js is awesome.</p>
-        //             <p>Besides coding, I also love music!</p>
-        //         </div>
-        // ) : null ;
-        // if(!this.state.displayBio) {
-        //     bio = null;
-        // }
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: (0, _profilePngDefault.default),
-                    alt: "profile",
-                    className: "profile"
-                }, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 97,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "Hello!"
-                }, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 100,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "My name is Samriddhi. I'm a web developer."
-                }, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 101,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "I'm always looking forward to working on meaningful projects."
-                }, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 102,
-                    columnNumber: 17
-                }, this),
-                this.state.displayBio ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "I live in Lucknow, and code almost every day."
-                        }, void 0, false, {
-                            fileName: "src/App.js",
-                            lineNumber: 107,
-                            columnNumber: 33
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "My favourite language is JavaScript, and I think React.js is awesome."
-                        }, void 0, false, {
-                            fileName: "src/App.js",
-                            lineNumber: 108,
-                            columnNumber: 33
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "Besides coding, I also love music!"
-                        }, void 0, false, {
-                            fileName: "src/App.js",
-                            lineNumber: 109,
-                            columnNumber: 33
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            onClick: this.toggleDisplayBio,
-                            children: "Show less"
-                        }, void 0, false, {
-                            fileName: "src/App.js",
-                            lineNumber: 110,
-                            columnNumber: 33
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/App.js",
-                    lineNumber: 106,
-                    columnNumber: 25
-                }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        onClick: this.toggleDisplayBio,
-                        children: "Read More"
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 115,
-                        columnNumber: 29
-                    }, this)
-                }, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 114,
-                    columnNumber: 25
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 119,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectsDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 120,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 121,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _socialProfilesDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 122,
-                    columnNumber: 17
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/App.js",
-            lineNumber: 96,
-            columnNumber: 13
-        }, this);
-    }
-}
-//handlers like onClick shoeld be given function names, not fn. call
-//because setState triggers a render call
-exports.default = App;
-
-  $parcel$ReactRefreshHelpers$f00f.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Projects":"aLAmU","./SocialProfiles":"eMaOk","./assets/profile.png":"Ubjjs","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aLAmU":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$5daf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5daf.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _project = require("./data/project");
-var _projectDefault = parcelHelpers.interopDefault(_project);
-//props - to pass parent components to child components
-//state is declared locally 
-//props come from external source
-class Project extends (0, _react.Component) {
-    render() {
-        console.log("this.props", this.props);
-        const { title , image , description , link  } = this.props.project;
-        //desctructuring syntax
-        // const title = this.props.project.title;
-        // const image = this.props.project.image;
-        // ... description, link
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            style: {
-                display: "inline-block",
-                width: 300,
-                margin: 10
-            },
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                    children: title
-                }, void 0, false, {
-                    fileName: "src/Projects.js",
-                    lineNumber: 22,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: image,
-                    alt: "profile",
-                    style: {
-                        width: 200,
-                        height: 120
-                    }
-                }, void 0, false, {
-                    fileName: "src/Projects.js",
-                    lineNumber: 23,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: description
-                }, void 0, false, {
-                    fileName: "src/Projects.js",
-                    lineNumber: 24,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                    href: link,
-                    children: link
-                }, void 0, false, {
-                    fileName: "src/Projects.js",
-                    lineNumber: 25,
-                    columnNumber: 17
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/Projects.js",
-            lineNumber: 21,
-            columnNumber: 13
-        }, this);
-    }
-}
-class Projects extends (0, _react.Component) {
-    render() {
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                    children: "Highlighted Projects"
-                }, void 0, false, {
-                    fileName: "src/Projects.js",
-                    lineNumber: 35,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    children: /* <div>{PROJECTS[0].title}</div>
-                    <div>{PROJECTS[1].title}</div>
-                    <div>{PROJECTS[2].title}</div> */ //each chld in an array or iterator should have a unique "key" prop
-                    //add key prop
-                    (0, _projectDefault.default).map((PROJECT)=>{
-                        return(// <div key={PROJECT.id}>{PROJECT.title}</div>
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Project, {
-                            project: PROJECT
-                        }, PROJECT.id, false, {
-                            fileName: "src/Projects.js",
-                            lineNumber: 47,
-                            columnNumber: 29
-                        }, this));
-                    })
-                }, void 0, false, {
-                    fileName: "src/Projects.js",
-                    lineNumber: 36,
-                    columnNumber: 17
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/Projects.js",
-            lineNumber: 34,
-            columnNumber: 13
-        }, this);
-    }
-}
-exports.default = Projects;
-
-  $parcel$ReactRefreshHelpers$5daf.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./data/project":"2Ludt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2Ludt":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _project1Png = require("../assets/project1.png");
-var _project1PngDefault = parcelHelpers.interopDefault(_project1Png);
-var _project2Png = require("../assets/project2.png");
-var _project2PngDefault = parcelHelpers.interopDefault(_project2Png);
-var _project3Png = require("../assets/project3.png");
-var _project3PngDefault = parcelHelpers.interopDefault(_project3Png);
-//SCREAM_CASE syntax
-const PROJECTS = [
-    {
-        id: 1,
-        title: "Example React Application",
-        description: "A React App that I built, involving JS and core web dev concepts!",
-        link: "https://github.com/Samriddhii-Siingh/portfolio-react-js",
-        image: (0, _project1PngDefault.default)
-    },
-    {
-        id: 2,
-        title: "My API",
-        description: "A REST API that I built from scratch with GET and POST requests!",
-        link: "https://github.com/Samriddhii-Siingh/portfolio-react-js",
-        image: (0, _project2PngDefault.default)
-    },
-    {
-        id: 3,
-        title: "Operating Systems Final Project",
-        description: "My uniqueOS project for my university OS course!",
-        link: "https://github.com/Samriddhii-Siingh/portfolio-react-js",
-        image: (0, _project3PngDefault.default)
-    }
-];
-exports.default = PROJECTS;
-
-},{"../assets/project1.png":"cngJB","../assets/project2.png":"Rojn7","../assets/project3.png":"8zfl5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cngJB":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "project1.cae3be24.png" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"Rojn7":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "project2.d47934b7.png" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"8zfl5":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "project3.104d946c.png" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"gkKU3":[function(require,module,exports) {
+},{}],"irmnC":[function() {},{}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -28133,11 +27722,11 @@ module.exports = require("./cjs/react-refresh-runtime.development.js");
     exports.setSignature = setSignature;
 })();
 
-},{}],"eMaOk":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$52a0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"ey9du":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9bc7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$52a0.prelude(module);
+$parcel$ReactRefreshHelpers$9bc7.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -28145,81 +27734,527 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _socialProfiles = require("./data/socialProfiles");
+var _projects = require("./Projects");
+var _projectsDefault = parcelHelpers.interopDefault(_projects);
+var _socialProfiles = require("./SocialProfiles");
 var _socialProfilesDefault = parcelHelpers.interopDefault(_socialProfiles);
-class SocialProfile extends (0, _react.Component) {
+var _title = require("./Title");
+var _titleDefault = parcelHelpers.interopDefault(_title);
+var _jokes = require("./Jokes");
+var _jokesDefault = parcelHelpers.interopDefault(_jokes);
+var _profilePng = require("../assets/profile.png");
+var _profilePngDefault = parcelHelpers.interopDefault(_profilePng);
+// class RegularClass {}
+// class ComponentClass extends Component {}
+// const regularClassInstance = new RegularClass();
+// const componentClassInstance = new ComponentClass();
+// console.log('regularClass Instance', regularClassInstance);
+// console.log('componentClassInstance', componentClassInstance);
+class App extends (0, _react.Component) {
+    state = {
+        displayBio: false
+    };
+    // constructor() {
+    //     super();
+    //     this.state = {displayBio: false}; //won't work alone, call super()
+    //     console.log('Component this', this);
+    //     //defining method in constructor
+    //     // this.readMore = () => {
+    //     //     console.log('readMore this', this);
+    //     // }
+    //     //bind method
+    //     //this.readMore = this.readMore.bind(this);
+    //     this.toggleDisplayBio = this.toggleDisplayBio.bind(this);
+    //now, we don't need to use bind once there's callback fn.
+    //     this.toggleDisplayBio = () => {...};
+    // }
+    readMore() {
+        // this.state.displayBio = true;
+        //bad practice to directly modify component's state
+        //instead use setState()
+        this.setState({
+            displayBio: true
+        });
+        console.log("readMore this", this);
+    }
+    //Rule: To never directly modify the state
+    //call setState() to change values in state to change
+    //changes that occur in render method
+    // this.setState.displayBio = !this.setState.displayBio;
+    //WRONG (bad practice)
+    //directly modifying the state
+    // this.setState({displayBio: !this.state.displayBio});
+    //RIGHT
+    //Wrong
+    // this.state.text = this.state.text + '...'; 
+    //Correct
+    // this.setState({text: this.state.text + '...'});
+    //React re-calls render() at the end of setState()
+    //render now has something new to return based on updated values
+    //this.state.foo = 'foo'
+    //doesn't work when state is modified directly, won't re-trigger render
+    //render doesn't notice, application won't update
+    showLess() {
+        this.setState({
+            displayBio: false
+        });
+    }
+    //adding arrows to make it callback function
+    toggleDisplayBio = ()=>{
+        this.setState({
+            displayBio: !this.state.displayBio
+        });
+    // this.state.displayBio = !this.state.displayBio;
+    //doesn't work
+    };
+    //can have render also as callback fn.
+    //but it's fundamental to have render like this
     render() {
-        const { link , image  } = this.props.socialProfile;
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: link,
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: image,
-                    alt: "social-profile",
-                    style: {
-                        width: 35,
-                        height: 35,
-                        margin: 10
-                    }
+        // let bio = this.state.displayBio ? (
+        //     <div>
+        //             <p>I live in Lucknow, and code almost every day.</p>
+        //             <p>My favourite language is JavaScript, and I think React.js is awesome.</p>
+        //             <p>Besides coding, I also love music!</p>
+        //         </div>
+        // ) : null ;
+        // if(!this.state.displayBio) {
+        //     bio = null;
+        // }
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _profilePngDefault.default),
+                    alt: "profile",
+                    className: "profile"
                 }, void 0, false, {
-                    fileName: "src/SocialProfiles.js",
-                    lineNumber: 11,
-                    columnNumber: 21
+                    fileName: "src/components/App.js",
+                    lineNumber: 99,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "Hello!"
+                }, void 0, false, {
+                    fileName: "src/components/App.js",
+                    lineNumber: 102,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: "My name is Samriddhi."
+                }, void 0, false, {
+                    fileName: "src/components/App.js",
+                    lineNumber: 103,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleDefault.default), {}, void 0, false, {
+                    fileName: "src/components/App.js",
+                    lineNumber: 105,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: "I'm always looking forward to working on meaningful projects."
+                }, void 0, false, {
+                    fileName: "src/components/App.js",
+                    lineNumber: 110,
+                    columnNumber: 17
+                }, this),
+                this.state.displayBio ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: "I live in Lucknow, and code almost every day."
+                        }, void 0, false, {
+                            fileName: "src/components/App.js",
+                            lineNumber: 115,
+                            columnNumber: 33
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: "My favourite language is JavaScript, and I think React.js is awesome."
+                        }, void 0, false, {
+                            fileName: "src/components/App.js",
+                            lineNumber: 116,
+                            columnNumber: 33
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: "Besides coding, I also love music!"
+                        }, void 0, false, {
+                            fileName: "src/components/App.js",
+                            lineNumber: 117,
+                            columnNumber: 33
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            onClick: this.toggleDisplayBio,
+                            children: "Show less"
+                        }, void 0, false, {
+                            fileName: "src/components/App.js",
+                            lineNumber: 118,
+                            columnNumber: 33
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/App.js",
+                    lineNumber: 114,
+                    columnNumber: 25
+                }, this) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        onClick: this.toggleDisplayBio,
+                        children: "Read More"
+                    }, void 0, false, {
+                        fileName: "src/components/App.js",
+                        lineNumber: 123,
+                        columnNumber: 29
+                    }, this)
+                }, void 0, false, {
+                    fileName: "src/components/App.js",
+                    lineNumber: 122,
+                    columnNumber: 25
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
+                    fileName: "src/components/App.js",
+                    lineNumber: 127,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectsDefault.default), {}, void 0, false, {
+                    fileName: "src/components/App.js",
+                    lineNumber: 128,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
+                    fileName: "src/components/App.js",
+                    lineNumber: 129,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _socialProfilesDefault.default), {}, void 0, false, {
+                    fileName: "src/components/App.js",
+                    lineNumber: 130,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
+                    fileName: "src/components/App.js",
+                    lineNumber: 131,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jokesDefault.default), {}, void 0, false, {
+                    fileName: "src/components/App.js",
+                    lineNumber: 132,
+                    columnNumber: 17
                 }, this)
-            }, void 0, false, {
-                fileName: "src/SocialProfiles.js",
-                lineNumber: 10,
-                columnNumber: 17
-            }, this)
-        }, void 0, false, {
-            fileName: "src/SocialProfiles.js",
-            lineNumber: 9,
+            ]
+        }, void 0, true, {
+            fileName: "src/components/App.js",
+            lineNumber: 98,
             columnNumber: 13
         }, this);
     }
 }
-class SocialProfiles extends (0, _react.Component) {
-    render() {
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                    children: "Connect with me!"
-                }, void 0, false, {
-                    fileName: "src/SocialProfiles.js",
-                    lineNumber: 22,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    children: (0, _socialProfilesDefault.default).map((SOCIAL_PROFILE)=>{
-                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SocialProfile, {
-                            socialProfile: SOCIAL_PROFILE
-                        }, SOCIAL_PROFILE.id, false, {
-                            fileName: "src/SocialProfiles.js",
-                            lineNumber: 26,
-                            columnNumber: 15
-                        }, this);
-                    })
-                }, void 0, false, {
-                    fileName: "src/SocialProfiles.js",
-                    lineNumber: 23,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/SocialProfiles.js",
-            lineNumber: 21,
-            columnNumber: 7
-        }, this);
-    }
-}
-exports.default = SocialProfiles;
+//handlers like onClick shoeld be given function names, not fn. call
+//because setState triggers a render call
+exports.default = App;
 
-  $parcel$ReactRefreshHelpers$52a0.postlude(module);
+  $parcel$ReactRefreshHelpers$9bc7.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./data/socialProfiles":"9Nllp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9Nllp":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Projects":"16pwG","./SocialProfiles":"1RVkN","./Title":"6wotK","../assets/profile.png":"Ubjjs","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Jokes":"azgA9"}],"16pwG":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ec2f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ec2f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _project = require("../data/project");
+var _projectDefault = parcelHelpers.interopDefault(_project);
+//props - to pass parent components to child components
+//state is declared locally 
+//props come from external source
+// stateless functional components - cleaner, more concise syntax
+// not extending Component class
+// refactor
+const Project = (props)=>{
+    // class Project extends Component {
+    //     render() {
+    // props for a stateless fn component becomes its I/Ps
+    // not this syntax of props for stateless
+    // console.log('this.props',this.props);
+    // props -  as I/P parameter
+    const { title , image , description , link  } = props.project;
+    //desctructuring syntax
+    // const title = this.props.project.title;
+    // const image = this.props.project.image;
+    // ... description, link
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        style: {
+            display: "inline-block",
+            width: 300,
+            margin: 10
+        },
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: title
+            }, void 0, false, {
+                fileName: "src/components/Projects.js",
+                lineNumber: 33,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: image,
+                alt: "profile",
+                style: {
+                    width: 200,
+                    height: 120
+                }
+            }, void 0, false, {
+                fileName: "src/components/Projects.js",
+                lineNumber: 34,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: description
+            }, void 0, false, {
+                fileName: "src/components/Projects.js",
+                lineNumber: 35,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: link,
+                children: link
+            }, void 0, false, {
+                fileName: "src/components/Projects.js",
+                lineNumber: 36,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Projects.js",
+        lineNumber: 32,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Project;
+// removing return() and putting () in place of {} - inline return
+const Projects = ()=>// class Projects extends Component {
+    //     render() {
+    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Highlighted Projects"
+            }, void 0, false, {
+                fileName: "src/components/Projects.js",
+                lineNumber: 46,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /* <div>{PROJECTS[0].title}</div>
+            <div>{PROJECTS[1].title}</div>
+            <div>{PROJECTS[2].title}</div> */ //each chld in an array or iterator should have a unique "key" prop
+                //add key prop
+                (0, _projectDefault.default).map((PROJECT)=>// return (
+                    // <div key={PROJECT.id}>{PROJECT.title}</div>
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Project, {
+                        project: PROJECT
+                    }, PROJECT.id, false, {
+                        fileName: "src/components/Projects.js",
+                        lineNumber: 58,
+                        columnNumber: 21
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/components/Projects.js",
+                lineNumber: 47,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Projects.js",
+        lineNumber: 45,
+        columnNumber: 5
+    }, undefined);
+_c1 = Projects;
+exports.default = Projects;
+var _c, _c1;
+$RefreshReg$(_c, "Project");
+$RefreshReg$(_c1, "Projects");
+
+  $parcel$ReactRefreshHelpers$ec2f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../data/project":"2Ludt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2Ludt":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _project1Png = require("../assets/project1.png");
+var _project1PngDefault = parcelHelpers.interopDefault(_project1Png);
+var _project2Png = require("../assets/project2.png");
+var _project2PngDefault = parcelHelpers.interopDefault(_project2Png);
+var _project3Png = require("../assets/project3.png");
+var _project3PngDefault = parcelHelpers.interopDefault(_project3Png);
+//SCREAM_CASE syntax
+const PROJECTS = [
+    {
+        id: 1,
+        title: "Example React Application",
+        description: "A React App that I built, involving JS and core web dev concepts!",
+        link: "https://github.com/Samriddhii-Siingh/portfolio-react-js",
+        image: (0, _project1PngDefault.default)
+    },
+    {
+        id: 2,
+        title: "My API",
+        description: "A REST API that I built from scratch with GET and POST requests!",
+        link: "https://github.com/Samriddhii-Siingh/portfolio-react-js",
+        image: (0, _project2PngDefault.default)
+    },
+    {
+        id: 3,
+        title: "Operating Systems Final Project",
+        description: "My uniqueOS project for my university OS course!",
+        link: "https://github.com/Samriddhii-Siingh/portfolio-react-js",
+        image: (0, _project3PngDefault.default)
+    }
+];
+exports.default = PROJECTS;
+
+},{"../assets/project1.png":"cngJB","../assets/project2.png":"Rojn7","../assets/project3.png":"8zfl5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cngJB":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "project1.cae3be24.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"Rojn7":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "project2.d47934b7.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"8zfl5":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "project3.104d946c.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"1RVkN":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$aca4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$aca4.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+// import React, { Component } from "react";
+// removing Component, no longer in use
+var _socialProfiles = require("../data/socialProfiles");
+var _socialProfilesDefault = parcelHelpers.interopDefault(_socialProfiles);
+// props -  as I/P parameter
+const SocialProfile = (props)=>{
+    // class SocialProfile extends Component {
+    //     render() {
+    const { link , image  } = props.socialProfile;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+            href: link,
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: image,
+                alt: "social-profile",
+                style: {
+                    width: 35,
+                    height: 35,
+                    margin: 10
+                }
+            }, void 0, false, {
+                fileName: "src/components/SocialProfiles.js",
+                lineNumber: 15,
+                columnNumber: 17
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/components/SocialProfiles.js",
+            lineNumber: 14,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/SocialProfiles.js",
+        lineNumber: 13,
+        columnNumber: 9
+    }, undefined);
+};
+_c = SocialProfile;
+const SocialProfiles = ()=>// class SocialProfiles extends Component {
+    //   render() {
+    // return (
+    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Connect with me!"
+            }, void 0, false, {
+                fileName: "src/components/SocialProfiles.js",
+                lineNumber: 26,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: (0, _socialProfilesDefault.default).map((SOCIAL_PROFILE)=>{
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SocialProfile, {
+                        socialProfile: SOCIAL_PROFILE
+                    }, SOCIAL_PROFILE.id, false, {
+                        fileName: "src/components/SocialProfiles.js",
+                        lineNumber: 30,
+                        columnNumber: 15
+                    }, undefined);
+                })
+            }, void 0, false, {
+                fileName: "src/components/SocialProfiles.js",
+                lineNumber: 27,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/SocialProfiles.js",
+        lineNumber: 25,
+        columnNumber: 7
+    }, undefined);
+_c1 = SocialProfiles;
+exports.default = SocialProfiles;
+var _c, _c1;
+$RefreshReg$(_c, "SocialProfile");
+$RefreshReg$(_c1, "SocialProfiles");
+
+  $parcel$ReactRefreshHelpers$aca4.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../data/socialProfiles":"9Nllp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9Nllp":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _emailIconPng = require("../assets/email_icon.png");
@@ -28266,9 +28301,178 @@ module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "linked
 },{"./helpers/bundle-url":"lgJ39"}],"3bmPd":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "twitter_icon.96c76d1b.png" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"Ubjjs":[function(require,module,exports) {
+},{"./helpers/bundle-url":"lgJ39"}],"6wotK":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$6418 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$6418.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const TITLES = [
+    "a student",
+    "a web developer",
+    "an enthusistic learner",
+    "exploring more & more"
+];
+class Title extends (0, _react.Component) {
+    state = {
+        titleIndex: 0,
+        fadeIn: true
+    };
+    // using as a class method,
+    // not as class property
+    componentDidMount() {
+        // setTimeout() - queuing an asynchronous setState call
+        // so we need to clean this up
+        // after 2s, change in fade
+        this.timeout = setTimeout(()=>this.setState({
+                fadeIn: false
+            }), 2000);
+        // console.log('Title component has mounted');
+        // to increment titleIndex in a state at regular interval, new title appear in render()
+        this.animateTitles();
+    }
+    // after 4s this.setState will fire, but after 4s time is up, the component is unmounted
+    // thus, ERROR (no display of Title)
+    // memoery leak to call setState on unmounted component
+    componentWillUnmount() {
+        // console.log('Title component will unmount!');
+        // takes interval id and stops a queued interval from firing in bg
+        clearInterval(this.titleInterval);
+        clearTimeout(this.timeout);
+    }
+    // setInterval() - 2 arguments
+    // 1- callback fn
+    // 2- millisec value - rate at which we fire callback fn for a value
+    // 4000ms = 4s
+    animateTitles = ()=>{
+        // titleInterval - we don't want setInterval() functionality firing in bg, there's no longer title in app
+        // directly attaching to component - value of setInterval no need to appear in JSX and render
+        this.titleInterval = setInterval(()=>{
+            // problem - once limit reached, index invalid of array, loop back
+            // use modulo operator
+            // 4 % 4 = 0
+            const titleIndex = (this.state.titleIndex + 1) % TITLES.length;
+            // 2nd one - local var declared above
+            // this.setState({ titleIndex: titleIndex });
+            // shorten this, JS recognixes same key: value pairs
+            this.setState({
+                titleIndex,
+                fadeIn: true
+            });
+            // so that after fade in, it fades out
+            this.timeout = setTimeout(()=>this.setState({
+                    fadeIn: false
+                }), 2000);
+        }, 4000);
+    // console.log('this.titleInterval', this.titleInterval);
+    };
+    render() {
+        // allows to simplify and remove this.state
+        // can selectively apply fade in or out class depending on fadeIn
+        const { fadeIn , titleIndex  } = this.state;
+        // const title = TITLES[this.state.titleIndex];
+        const title = TITLES[titleIndex];
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+            className: fadeIn ? "title-fade-in" : "title-fade-out",
+            children: [
+                "I am ",
+                title
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Title.js",
+            lineNumber: 74,
+            columnNumber: 13
+        }, this);
+    }
+}
+exports.default = Title;
+
+  $parcel$ReactRefreshHelpers$6418.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"Ubjjs":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "profile.36203507.png" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"irmnC":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire2041")
+},{"./helpers/bundle-url":"lgJ39"}],"azgA9":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$40f0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$40f0.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class Jokes extends (0, _react.Component) {
+    state = {
+        joke: {}
+    };
+    // place fetch (& other asynchronous code) in componentDidMount()
+    // fetch is asynchronous, don't know duration of loading
+    // slow request - delay rendering of component
+    // result of asynchronous code - update state with this.setState when data finished fetching
+    componentDidMount() {
+        // returns JS promise - handler (.then)
+        // promise - JS ways to represent results of a value that'll be resolved in future
+        // .then - takes callback fn
+        fetch("https://official-joke-api.appspot.com/random_joke")// .then(response => console.log('response', response));
+        .then((response)=>response.json())// .then(json => console.log('json', json));
+        .then((json)=>this.setState({
+                joke: json
+            }));
+    }
+    render() {
+        const { setup , punchline  } = this.state.joke;
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: "Highlighted Joke"
+                }, void 0, false, {
+                    fileName: "src/components/Jokes.js",
+                    lineNumber: 26,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: [
+                        setup,
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("em", {
+                            children: punchline
+                        }, void 0, false, {
+                            fileName: "src/components/Jokes.js",
+                            lineNumber: 27,
+                            columnNumber: 27
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Jokes.js",
+                    lineNumber: 27,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Jokes.js",
+            lineNumber: 25,
+            columnNumber: 13
+        }, this);
+    }
+}
+exports.default = Jokes;
+
+  $parcel$ReactRefreshHelpers$40f0.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire2041")
 
 //# sourceMappingURL=index.975ef6c8.js.map
